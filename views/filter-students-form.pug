@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .container
+        h1 Filter Students
+        form(action='/filter-students' method='post')
+            label(for='id') Student ID:
+            input(type='text' name='id' id='id')
+            br
+            br
+            label(for='name') Student Name:
+            input(type='text' name='name' id='name')
+            br
+            br
+            label(for='department') Department:
+            input(type='text' name='department' id='department')
+            br
+            br
+            input(type='submit' value='Search Student')
+
+

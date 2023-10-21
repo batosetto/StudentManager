@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+    .container
+        h1=title 
+        each course in coursesList
+            br
+            p(style={"color": "white", "background-color": "blue", }) ID: #{course.id}
+            h2 Name: #{course.name}
+            p Department: #{course.department}
+            p Description: #{course.description}
+            strong Remaining Seats: #{course.numRemainingSeats}
+            br
+

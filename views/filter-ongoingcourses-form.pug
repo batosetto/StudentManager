@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .container
+        h1 Filter Ongoing Courses
+        form(action='/filter-ongoingcourses' method='post')
+            label(for='id') Course ID:
+            input(type='text' name='id' id='id')
+            br
+            br
+            label(for='name') Course Name:
+            input(type='text' name='name' id='name')
+            br
+            br
+            label(for='department') Department:
+            input(type='text' name='department' id='department')
+            br
+            br
+            input(type='submit' value='Search Course')
+
+

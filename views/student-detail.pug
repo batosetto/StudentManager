@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .container
+        h1= title
+
+        h2= student.name
+        p ID: #{student.id}
+        p Department: #{student.department}
+        p Semester: #{student.semester}
+        p Average Grade: #{averageGrade}

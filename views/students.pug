@@ -1,0 +1,15 @@
+extends layout
+
+block content 
+    .container
+        h1= title 
+        ul 
+            each student in studentsList 
+                ol 
+                    p(style={"color": "white", "background-color": "red", })  ID: #{student.id}
+                    br
+                    strong  Name: #{student.name}
+                    p Department: #{student.department}
+                    p Semester: #{student.semester}
+                    p Enrolled Courses: #{student.coursesEnrolledIn}
+
